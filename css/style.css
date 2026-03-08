@@ -505,7 +505,7 @@ button {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 65%;
   height: 100%;
   z-index: 1;
   overflow: hidden;
@@ -539,11 +539,11 @@ button {
 .hero__photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  object-fit: contain;
+  object-position: left center;
   display: block;
-  /* Very subtle desaturation — graduation photo has blue tones that already fit the dark palette */
-  filter: grayscale(10%) contrast(1.05) brightness(0.92);
+  /* Graduation photo already has blue tones that fit the dark palette */
+  filter: grayscale(10%) contrast(1.05) brightness(0.88);
 }
 
 @keyframes photoReveal {
