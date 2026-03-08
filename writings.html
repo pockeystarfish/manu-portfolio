@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writings — Manu Mythil Muralee</title>
+    <meta name="description"
+        content="Published economic research by Manu Mythil Muralee — including The Intelligent Monopoly, an analysis of AI market economics and regulatory frameworks.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Writings — Manu Mythil Muralee">
+    <meta property="og:description"
+        content="Published research on AI economics, regulatory frameworks, and market structure.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>M</text></svg>">
+    <style>
+        /* Writings hero — Spline on the right */
+        .writings-hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .writings-hero__spline {
+            position: absolute;
+            top: 0;
+            right: -5%;
+            width: 52%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            mask-image: radial-gradient(ellipse 70% 80% at 70% 50%, black 30%, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse 70% 80% at 70% 50%, black 30%, transparent 80%);
+        }
+
+        .writings-hero__spline iframe {
+            width: 120%;
+            height: 120%;
+            margin-top: -10%;
+            margin-left: -10%;
+            border: none;
+        }
+
+        .writings-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Single featured paper — make it span full width, more impactful */
+        .writing-featured {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 4px;
+            padding: 3rem;
+            transition: border-color 0.3s ease, background 0.3s ease;
+        }
+
+        .writing-featured:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .writing-featured__label {
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--mid);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .writing-featured__label .badge {
+            background: var(--white);
+            color: var(--black);
+            padding: 0.2em 0.7em;
+            border-radius: 2px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+
+        .writing-featured__title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            color: var(--white);
+            margin-bottom: 2rem;
+        }
+
+        .writing-featured__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .writing-featured__body {
+                grid-template-columns: 1fr;
+            }
+
+            .writings-hero__spline {
+                display: none;
+            }
+        }
+
+        .writing-featured__point h4 {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--light);
+            margin-bottom: 0.6rem;
+        }
+
+        .writing-featured__point p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--mid);
+        }
+
+        .writing-featured__meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .writing-featured__meta span {
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--mid);
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo" aria-label="Manu Mythil Muralee - Home">Manu Mythil Muralee</a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="experience.html" class="nav__link">Experience</a></li>
+                    <li><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li><a href="ai-tools.html" class="nav__link">AI Tools</a></li>
+                    <li><a href="frameworks.html" class="nav__link">Frameworks</a></li>
+                    <li><a href="writings.html" class="nav__link">Writings</a></li>
+                    <li><a href="journey.html" class="nav__link">Journey</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+        <a href="about.html" class="mobile-nav__link">About</a>
+        <a href="experience.html" class="mobile-nav__link">Experience</a>
+        <a href="projects.html" class="mobile-nav__link">Projects</a>
+        <a href="ai-tools.html" class="mobile-nav__link">AI Tools</a>
+        <a href="frameworks.html" class="mobile-nav__link">Frameworks</a>
+        <a href="writings.html" class="mobile-nav__link">Writings</a>
+        <a href="journey.html" class="mobile-nav__link">Journey</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </div>
+
+    <main id="main-content">
+
+        <!-- Page Hero with Spline -->
+        <section class="page-hero writings-hero" aria-label="Writings page header">
+            <div class="container">
+                <p class="t-label page-hero__label reveal">Essays &amp; Research</p>
+                <h1 class="t-h1 page-hero__title reveal">Where numbers<br>tell stories.</h1>
+                <p class="t-body-lg page-hero__text reveal" style="color: var(--mid); max-width: 520px;">
+                    Published economic research at the intersection of AI, regulatory economics,
+                    and market structure.
+                </p>
+            </div>
+
+            <!-- Kinetic Grid Spline Scene -->
+            <div class="writings-hero__spline" aria-hidden="true">
+                <iframe src="https://my.spline.design/kineticgrid-veA5qu1f2024dqogpxPms5oG/" frameborder="0"
+                    loading="lazy" title="Kinetic grid visual">
+                </iframe>
+            </div>
+        </section>
+
+        <div class="divider" style="margin: 0;"></div>
+
+        <!-- Single Published Paper -->
+        <section class="section" aria-label="Published research">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="t-label section-header__label">Published Work</p>
+                    <h2 class="t-h2 section-header__title">Economic Research</h2>
+                </div>
+
+                <article class="writing-featured reveal" id="writing-intelligent-monopoly">
+                    <div class="writing-featured__label">
+                        Economic Research &nbsp;·&nbsp; Regulatory Economics &nbsp;·&nbsp; AI Markets
+                        <span class="badge">Published</span>
+                    </div>
+                    <h3 class="writing-featured__title">
+                        The Intelligent Monopoly: Why AI Economics Points Toward a Natural Monopoly
+                    </h3>
+
+                    <div class="writing-featured__body">
+                        <div class="writing-featured__point">
+                            <h4>The Question</h4>
+                            <p>While most conversations about AI focus on capabilities, I wanted to understand the
+                                financial realities. In my paper, I analyzed real financial cost data for running Large
+                                Language Models — specifically the WINGPT study — through the lens of regulatory
+                                economics.</p>
+                        </div>
+                        <div class="writing-featured__point">
+                            <h4>The Cost of Scale</h4>
+                            <p>My regression analysis shows that AI infrastructure behaves like a natural monopoly. When
+                                you increase the scale of operation (concurrency) by 10%, the unit cost drops by
+                                approximately 2.6%. This efficiency advantage makes it nearly impossible for smaller
+                                competitors to enter the market without regulation.</p>
+                        </div>
+                        <div class="writing-featured__point">
+                            <h4>The Data Problem</h4>
+                            <p>AI models need a constant flow of new human data to stay intelligent. Current frameworks
+                                allow companies to extract this data for free, which discourages creators from producing
+                                new work. If this data supply dries up, model performance will inevitably degrade.</p>
+                        </div>
+                        <div class="writing-featured__point">
+                            <h4>A Practical Solution</h4>
+                            <p>My paper proposes a two-pronged regulatory approach: Price Caps (RPI-X) on infrastructure
+                                to motivate major providers to pass savings to consumers, and a Statutory Licensing
+                                system to pay creators fairly and keep the data supply flowing. This research uses
+                                actual numbers rather than theoretical debates to find a strategy that works.</p>
+                        </div>
+                    </div>
+
+                    <div class="writing-featured__meta">
+                        <span>Research Paper</span>
+                        <span>Regulatory Economics</span>
+                        <span>AI Market Structure</span>
+                        <span>IE Business School</span>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://drive.google.com/file/d/1vcxfdAMX5iprjMY_j-mD1Gljhxsdp2JC/view?usp=sharing"
+                            target="_blank" rel="noopener noreferrer" class="btn btn--primary"
+                            id="intelligent-monopoly-read-btn">
+                            Read Paper <span class="btn__arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section" style="border-top: 1px solid rgba(255,255,255,0.08);" aria-label="Connect section">
+            <div class="container">
+                <div class="reveal" style="max-width: 600px;">
+                    <p class="t-label" style="margin-bottom: 1rem;">Let's Talk Research</p>
+                    <h2 class="t-h2" style="margin-bottom: 1rem;">Interested in tech strategy or AI regulation?</h2>
+                    <p class="t-body" style="margin-bottom: 2rem;">I am always eager to connect with anyone working on
+                        tech strategy, AI market economics, or regulation to discuss these findings and explore new
+                        ideas.</p>
+                    <a href="https://linkedin.com/in/manumuralee" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--primary" id="writings-linkedin-cta">
+                        Connect on LinkedIn <span class="btn__arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">Manu Mythil Muralee</div>
+                <div class="footer__links">
+                    <a href="about.html" class="footer__link">About</a>
+                    <a href="experience.html" class="footer__link">Experience</a>
+                    <a href="projects.html" class="footer__link">Projects</a>
+                    <a href="writings.html" class="footer__link">Writings</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 Manu Mythil Muralee. All rights reserved.</p>
+                <p class="footer__copyright">Designed with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
