@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current path, search queries, and hash (like #factor-neutral)
+        var path = window.location.pathname; 
+        var hash = window.location.hash;
+        var search = window.location.search;
+        
+        // Strip out the old repository name so we don't duplicate it
+        if (path.startsWith('/manu-portfolio')) {
+            path = path.substring('/manu-portfolio'.length);
+        }
+        
+        // Construct the final URL on the new domain
+        var newDomain = "https://mythilmanumuralee.github.io/manu-portfolio";
+        window.location.href = newDomain + path + search + hash;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a id="fallback-link" href="https://mythilmanumuralee.github.io/manu-portfolio/">click here</a>.</p>
+    <script>
+        document.getElementById('fallback-link').href = newDomain + path + search + hash;
+    </script>
+</body>
+</html>
